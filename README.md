@@ -104,7 +104,7 @@ npm install
 npm run dev
 ```
 
-App: http://localhost:3000
+App: https://primetrade-assessment-orcin.vercel.app
 
 > Vite proxies `/api` → `https://prime-trade-assessment-su11.onrender.com` automatically during development.
 
