@@ -1,15 +1,10 @@
 import axios from "axios";
 
-/**
- * Axios instance pre-configured for the backend API.
- * Automatically attaches the JWT from localStorage to every request.
- */
 const api = axios.create({
-  baseURL: "/api/v1",
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api/v1",
   headers: { "Content-Type": "application/json" },
 });
 
-// Request interceptor — inject token before each request
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
   if (token) {
@@ -18,7 +13,6 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-// Response interceptor — handle global 401 (token expired)
 api.interceptors.response.use(
   (response) => response,
   (error) => {
