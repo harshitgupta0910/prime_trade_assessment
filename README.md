@@ -93,8 +93,8 @@ npm run dev         # nodemon — auto-reload
 npm start           # plain node
 ```
 
-Server: https://prime-trade-assessment-su11.onrender.com  
-Swagger UI: https://prime-trade-assessment-su11.onrender.com/api/docs
+Server: http://localhost:5000  
+Swagger UI: http://localhost:5000/api/docs
 
 ### Frontend
 
@@ -106,7 +106,7 @@ npm run dev
 
 App: http://localhost:3000
 
-> Vite proxies `/api` → `https://prime-trade-assessment-su11.onrender.com` automatically during development.
+> Vite proxies `/api` → `http://localhost:5000` automatically during development.
 
 ---
 
