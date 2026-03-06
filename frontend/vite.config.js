@@ -8,7 +8,7 @@ export default defineConfig({
     // Proxy API calls to the backend during development
     proxy: {
       "/api": {
-        target: "http://localhost:5000",
+        target: "https://prime-trade-assessment-su11.onrender.com",
         changeOrigin: true,
       },
     },
